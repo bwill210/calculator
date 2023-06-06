@@ -1,0 +1,70 @@
+.container {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-card {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    border-radius: 8px;
+}
+
+.display-container {
+    display: flex;
+    margin: 1em 1em 1em 1em;
+    justify-content: center;
+
+}
+
+.display {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 8px;
+    align-self: center;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: end;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "clear clear clear clear"
+        "number number number operand"
+        "number number number operand"
+        "number number number operand"
+        "number number result operand";
+    justify-content: stretch;
+}
+
+button {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    background-color: lightgrey;
+}
+
+.number {
+    grid-area: number;
+}
+
+.operand {
+    grid-area: operand;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.result {
+    grid-area: result;
+}
