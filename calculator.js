@@ -1,9 +1,9 @@
 function add(a, b) {
-    return a + b;
+    return console.log(a + b);
 }
 
 function subtract(a, b) {
-    return a - b;
+    return console.log(a - b);
 }
 
 function multiply(a, b) {
@@ -14,32 +14,22 @@ function divide(a, b) {
     return console.log(a / b);
 }
 
-let n1;
-let n2;
-let operator;
-
 function operate(n1, n2, operator) {
     switch(operator) {
         case '+':
-            add(n1, n2);
-            break;
+            return add(n1, n2);
         case '-':
-            subtract(n1, n2);
-            break;
+            return subtract(n1, n2);
         case '*':
-            multiply(n1, n2);
-            break;
+            return multiply(n1, n2);
         case '/':
-            divide(n1, n2);
-            break;
+            return divide(n1, n2);
         default:
-            console.log("surely this will never print");
+            return console.log("Please pick a valid operator.");
     }
 }
 
-/*
-divide(6, 2);
-multiply(6, 2);
-subtract(6, 2);
-add(6, 2);
-*/
+let n1 = 4;
+let n2 = 10;
+let operator = '*';
+operate(n1, n2, operator);
