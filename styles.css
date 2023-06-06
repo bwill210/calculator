@@ -1,70 +1,64 @@
-.container {
-    height: 70vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-}
 
 .calculator-card {
-    height: 100%;
-    width: 100%;
+    height: 630px;
+    width: 460px;
     background-color: gray;
     align-self: center;
+    /*
     display: grid;
     grid-template-rows: 1fr 5fr;
+    */
     border-radius: 8px;
 }
 
 .display-container {
     display: flex;
-    margin: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
     justify-content: center;
 
 }
 
 .display {
-    height: 100%;
+    height: 80px;
     width: 100%;
     background-color: black;
     border-radius: 8px;
     align-self: center;
     color: white;
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: end;
+    font-size: 5rem;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 .buttons-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-        "clear clear clear clear"
-        "number number number operand"
-        "number number number operand"
-        "number number number operand"
-        "number number result operand";
-    justify-content: stretch;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
 }
 
 button {
-    width: auto;
-    height: auto;
-    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    border-radius: 60px;
     background-color: lightgrey;
 }
 
-.number {
-    grid-area: number;
-}
-
 .operand {
-    grid-area: operand;
+    background-color: orange;
 }
 
 .clear {
-    grid-area: clear;
+    background-color: #337cac;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 300px;
 }
 
-.result {
-    grid-area: result;
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 300px;
 }
