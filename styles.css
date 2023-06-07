@@ -1,5 +1,5 @@
 
-.calculator-card {
+.calculator_card {
     height: 630px;
     width: 460px;
     background-color: gray;
@@ -11,7 +11,7 @@
     border-radius: 8px;
 }
 
-.display-container {
+.display_container {
     display: flex;
     padding: 1em 1em 1em 1em;
     justify-content: center;
@@ -31,7 +31,7 @@
     padding-right: 20px;
 }
 
-.buttons-container {
+.buttons_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -46,7 +46,7 @@ button {
     background-color: lightgrey;
 }
 
-.operand {
+.operand{
     background-color: orange;
 }
 
@@ -57,7 +57,7 @@ button {
     width: 300px;
 }
 
-.zero {
+#zero {
     grid-column-start: 1;
     grid-column-end: 4;
     width: 300px;
