@@ -1,14 +1,18 @@
 
+.container {
+    display: flex;
+    height: 75vh;
+    min-height: 632px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 .calculator_card {
-    height: 630px;
-    width: 460px;
-    background-color: gray;
+    background-color: rgb(155, 155, 155);
     align-self: center;
-    /*
-    display: grid;
-    grid-template-rows: 1fr 5fr;
-    */
-    border-radius: 8px;
+    border-radius: 15px;
+    border: #333;
 }
 
 .display_container {
@@ -22,7 +26,7 @@
     height: 80px;
     width: 100%;
     background-color: black;
-    border-radius: 8px;
+    border-radius: 15px;
     align-self: center;
     color: white;
     font-size: 5rem;
@@ -46,7 +50,7 @@ button {
     background-color: lightgrey;
 }
 
-.operand{
+.operator{
     background-color: orange;
 }
 
