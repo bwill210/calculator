@@ -1,68 +1,76 @@
-
 .container {
-    display: flex;
-    height: 75vh;
-    min-height: 632px;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .calculator_card {
-    background-color: rgb(155, 155, 155);
-    align-self: center;
-    border-radius: 15px;
-    border: #333;
+  display: grid;
+  grid-template-rows: 3fr 7fr;
+  background-color: #000;
+  height: 632px;
+  min-height: 632px;
+  width: 300px;
+  min-width: 300px;
+
+
+  border-radius: 55px;
+  border: 4px solid #8196AE;
+  padding: 10px;
 }
 
 .display_container {
-    display: flex;
-    padding: 1em 1em 1em 1em;
-    justify-content: center;
-
+  display: flex;
+  padding: 1em 0em 1em 0em;
+  justify-content: end;
 }
 
 .display {
-    height: 80px;
-    width: 100%;
-    background-color: black;
-    border-radius: 15px;
-    align-self: center;
-    color: white;
-    font-size: 5rem;
-    text-align: right;
-    padding-left: 10px;
-    padding-right: 20px;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  border-radius: 15px;
+  align-self: flex-end;
+  color: white;
+  font-size: 5rem;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 .buttons_container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
+  display: grid;
+  width: 300px;
+  height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 
 button {
-    width: 80px;
-    height: 80px;
-    border-radius: 60px;
-    background-color: lightgrey;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #313131;
+  color: white;
+  font-size: 20pt;
 }
 
-.operator{
-    background-color: orange;
+.operator {
+  background-color: #f69a06;
 }
 
 .clear {
-    background-color: #337cac;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    width: 300px;
+  background-color: #9f9f9f;
+  color: black;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 210px;
 }
 
 #zero {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    width: 300px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 210px;
 }
